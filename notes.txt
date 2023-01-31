@@ -1,0 +1,68 @@
+A method / function is a code block which performs specific task.
+ found in programming language
+A procedure runs silently.
+ found in dbms
+
+A non static nested class is called inner class
+
+Create a search function for BST which returns True/False if data is available
+constraints: recursion should be avoided
+Deletion in BST
+AVL, Red Black tree
+memoizatiobn
+subarray - contiguous
+subsequence - can be non contiguous
+
+Q. N-Queen problem
+
+0/1 knapsack - intangible item; one item only once
+it is very standard problem where you are given the n items. your job is to knapsack items in the order 
+where you gain max profit by reducing the weight associated with those items. therefore this problem can
+be categorised as either maximization of profit or minimization of the weights.
+inputs - int[] value (value of n items),int[]weight (weight of n items),int N, int W
+value and weight are respective.
+the brute force solution of the problem determines to be a binary tree containing the solution by finding 
+each possible subset of outcomes; and determining if there is any profit.
+checking if item insertion in knapsack (decision tree)
+Q. Border printing
+
+AVL trees
+While constructing a BST, a following sequence is kept in mind: left<root<right
+ which means that left subtree is always smaller than the root whereas right subtree is always greater than
+ root.
+In a typical search for a BST, average running time complexity for searching is O(log N)/ O(h) but,
+ this running time complexity could also increase upto O(N) (worst case), if data inserted is sorted.
+ following sequence could be found while inserting the sorted data:
+ o <- o <- o || o -> o -> o ;
+ h1=h2=N 
+hf()
+
+height factor in a strictly completely binary tree is 0
+
+Height Factor in BST
+height factor is defined as the difference between left and right height
+hf = lheight - rheight
+In a 3 node BST, height factor could be broken down into the following situations:
+hf = -1(right subtree exists) | 0 | 1(left subtree exists)
+cormenn 3rd edition
+
+3 Node Theorem for balancing a BST:
+if we consider a BST containing 3 nodes, and if the order of the sequence is not taken into consideration,
+ then the insertion can happen in N! ways i.e., 3! = 3X2X1 = 6 different ways.
+ According to the theorem, if the insertion sequence is ignored for a 3Node BST, then the possible BSTs 
+ constructed are 6.
+ 10->20->30 | 10<-20<-30 | 20<-r10<-30
+ our goal is to transorm any skewed tree to a balanced tree by performing certain rotations
+ Case1: if skew occurs on Root->left->left (diag)
+ ->LL rotation
+ Case2: if skew occurs on Root->right->right 
+ ->RR rotation
+ Case3: if skew occurs on Root->left->right
+ ->LR rotation
+ Case4: if skew occurs on Root->right->left
+ ->RL rotation
+
+round robin
+fcfs
+sjf primitive
+priority scheduling
